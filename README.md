@@ -1,8 +1,8 @@
 # CMSC335-Final-Project
 
-Submitted by: Rose Smith (directory id: superterp)
+Submitted by: Arik Hasan (directory id: ahasan13)
 
-Group Members: Rose Smith (superterp), Peter Santos (pmegaterp)
+Group Members: Arik Hasan (ahasan13), Peter Santos (pmegaterp)
 
 App Description: Allow users to find images, songs of an author and store the results.
 
