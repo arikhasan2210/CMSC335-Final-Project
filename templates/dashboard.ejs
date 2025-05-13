@@ -9,15 +9,16 @@
 <body>
     <b>Name: </b><%- namep %> 
     <br>
-    <b>Email: </b><<%- email %>
+    <b>Email: </b><%- email %>
     <br>
-    <b>Github: </b><<%- github %>
+    <b>GitHub:</b> <a href="<%- githubUrl %>" target="_blank"><%- githubUrl %></a>
     <br>
     <b>Programming Languages: </b> <%- languages %>
     <br>
     <b>People You may know: </b> <%- devs  %>
     <br>
-    <b>Your Picture:</b>  <%- image  %>
-
+    <b>Your Picture:</b><br>
+    <img src="<%- image %>" width="150">
+    <a href="/">Home</a>
 </body>
 </html>
