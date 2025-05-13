@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevConnect</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
 
     <style>
       h1{
     color:black;
     text-align: center;
     font-size: 4em;
+      font-family: "Share Tech", sans-serif;
 }
 h2{
     text-align: center;
@@ -40,6 +44,11 @@ body{
     text-align: center;
 
 }
+.share-tech-regular {
+  font-family: "Share Tech", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
     </style>
 </head>
 <body>
@@ -52,8 +61,8 @@ body{
    <strong>Email:</strong><input type="email" name="email" id="emails" required placeholder="useremail@org.com"><br><br>
    <strong>Password: </strong><input type="text" name="passwords" id="passwords" required value><br><br>
   </div> <br>
-  <input type="button" value="Login" onsubmit="return lookAccount();" id="button">
+  <input type="button" value="Login" id="button">
   </form><br>
-  <a href="/create">Create account</a>
+  <a href="/createAccount">Create account</a>
 </body>
 </html>
