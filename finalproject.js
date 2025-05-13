@@ -51,26 +51,15 @@ app.post("/", async (req, res) => {
     const { email, password } = req.body;
     const user = await collection.findOne({ email: email });
     if (!user) {
-        return res.send("No account with that email exists.");
+        return res.send(`<style>body{background-color: rgb(214, 122, 9);text-align: center;}</style><h2>No account with that email exists.</h2><br> <a href = "/" > Home </a> `);
     }
     const isMatch = await bcrypt.compare(password, user.password);
 
     if (isMatch) {
-        let vara = {namep,email,languages,devs,image}
-        vara.namep = user.name;
-        vara.email = user.email;
-        vara.languages = user.languages;
-        let others = await collection.find();
-        let otherArray = await others.toArray();
-        let list = "<ul>"
-        othersArray.forEach((person) => {
-            list += `<li>${person.name}, Languages: ${person.languages}</li>`
-        })
-        list += "</ul>"
-
-        res.render("dashboard", vara); 
+        res.render("dashboard", { user }); 
     } else {
-        res.send("Incorrect password.");
+        return res.send(`<style>body{background-color: rgb(214, 122, 9);text-align: center;}</style><h2>No account with that password exists.</h2><br> <a href = "/" > Home </a> `);
+
     }
 });
 
