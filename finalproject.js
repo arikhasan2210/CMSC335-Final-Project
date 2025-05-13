@@ -56,10 +56,24 @@ app.post("/", async (req, res) => {
     const isMatch = await bcrypt.compare(password, user.password);
 
     if (isMatch) {
-        res.render("dashboard", { user }); 
+        const others = await collection.find({ email: { $ne: email } }).toArray();
+        let list = "<ul>";
+        others.forEach((person) => {
+          list += `<li>${person.name}, Languages: ${person.languages}</li>`;
+        });
+        list += "</ul>";
+  
+        const vara = {
+          namep: user.name,
+          email: user.email,
+          languages: user.languages,
+          image: user.avatarUrl,
+          devs: list
+        };
+
+        res.render("dashboard", vara); 
     } else {
         return res.send(`<style>body{background-color: rgb(214, 122, 9);text-align: center;}</style><h2>No account with that password exists.</h2><br> <a href = "/" > Home </a> `);
-
     }
 });
 
