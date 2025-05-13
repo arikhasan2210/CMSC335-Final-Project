@@ -4,21 +4,56 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Dash Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
 </head>
+<style>
+   
+body{
+    background-color: rgb(214, 122, 9);
+}
 
+
+#button{
+    background-color: rgb(6, 114, 255);
+    width: 220px;
+    border-radius: 10px;
+    height: 46px;
+    color:white;
+    font-size: 25px;
+    text-align: center;
+
+}
+.share-tech-regular {
+  font-family: "Share Tech", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h1{
+     color:black;
+    text-align: center;
+    font-size: 4em;
+    font-family: "Share Tech", sans-serif;
+}
+    </style>
 <body>
+<h1>DevConnect</h1>
+    <b>Your Picture:</b><br><br>
+    <img src="<%- image %>" width="150"><br>
+    <br>
     <b>Name: </b><%- namep %> 
-    <br>
+    <br><br>
     <b>Email: </b><%- email %>
-    <br>
+    <br><br>
     <b>GitHub:</b> <a href="<%- githubUrl %>" target="_blank"><%- githubUrl %></a>
-    <br>
+    <br><br>
     <b>Programming Languages: </b> <%- languages %>
-    <br>
+    <br><br>
     <b>People You may know: </b> <%- devs  %>
-    <br>
-    <b>Your Picture:</b><br>
-    <img src="<%- image %>" width="150">
+    <br><br>
+    
+   
     <a href="/">Home</a>
 </body>
 </html>
