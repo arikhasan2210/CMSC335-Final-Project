@@ -12,4 +12,4 @@ APIs: GitHub (https://api.github.com/users/${username})
 
 Contact Email:  ahasan13@terpmail.umd.edu
 
-Deployed App Link: https://notreal.what.terpNel/myApp
+Deployed App Link: https://cmsc335-final-project-gzv2.onrender.com
