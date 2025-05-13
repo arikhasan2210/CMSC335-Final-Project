@@ -4,7 +4,7 @@ Submitted by: Arik Hasan (directory id: ahasan13)
 
 Group Members: Arik Hasan (ahasan13), Nathan Tekle(ntekle1), Neil Sidhu(nsidhu), Michael Felder(mfelder1) 
 
-App Description: The users have the ability to look up other users online by their name, bio, and favorite programming languages.
+App Description: Site for developers to connect with other developers, app uses the github username during account creation to pull gitHub URL to direct to their repositories of projects and their avatar of their GitHub too. App also allows user to find other developers and their preferred programming languages along with their GitHub repository and avatar. App uses password hashing for password protection in database. 
 
 YouTube Video Link: https://www.youtube.com/MyAmazingAPP
 
