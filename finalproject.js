@@ -56,7 +56,19 @@ app.post("/", async (req, res) => {
     const isMatch = await bcrypt.compare(password, user.password);
 
     if (isMatch) {
-        res.render("dashboard", { user }); 
+        let vara = {namep,email,languages,devs,image}
+        vara.namep = user.name;
+        vara.email = user.email;
+        vara.languages = user.languages;
+        let others = await collection.find();
+        let otherArray = await others.toArray();
+        let list = "<ul>"
+        othersArray.forEach((person) => {
+            list += `<li>${person.name}, Languages: ${person.languages}</li>`
+        })
+        list += "</ul>"
+
+        res.render("dashboard", vara); 
     } else {
         res.send("Incorrect password.");
     }
