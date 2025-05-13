@@ -10,6 +10,6 @@ YouTube Video Link: https://www.youtube.com/MyAmazingAPP
 
 APIs: VideoApp (http:notrealvideoapp.what), SoundApp (http:notreadlsoundapp.what)
 
-Contact Email:  superterp@notreal.address.what
+Contact Email:  ahasan13@terpmail.umd.edu
 
 Deployed App Link: https://notreal.what.terpNel/myApp
