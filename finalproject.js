@@ -36,13 +36,24 @@ app.post("/createAccount", async (req, res) => {
 
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    const dev = {
-        name: name,
-        email: email,
-        username: username,
+    let githubUrl = "";
+    let avatarUrl = "";
+  
+      const response = await fetch(`https://api.github.com/users/${username}`);
+      const data = await response.json();
+      githubUrl = data.html_url ;
+      avatarUrl = data.avatar_url ;
+    
+  
+      const dev = {
+        name,
+        email,
+        username,
         password: hashedPassword,
-        languages: languages
-    };
+        languages,
+        githubUrl,
+        avatarUrl
+      };
 
     await collection.insertOne(dev);
     res.render("successfulCreate");
@@ -67,6 +78,7 @@ app.post("/", async (req, res) => {
           namep: user.name,
           email: user.email,
           languages: user.languages,
+          githubUrl: user.githubUrl,
           image: user.avatarUrl,
           devs: list
         };
