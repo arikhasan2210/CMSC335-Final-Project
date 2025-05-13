@@ -70,7 +70,7 @@ app.post("/", async (req, res) => {
         const others = await collection.find({ email: { $ne: email } }).toArray();
         let list = "<ul>";
         others.forEach((person) => {
-          list += `<li>${person.name}, Languages: ${person.languages}</li>`;
+          list += `<li><img src="${person.avatarUrl}" width="40px" height="30px">  ${person.name}, GitHub Account: <a href="${person.githubUrl}">${person.githubUrl}</a> Languages: ${person.languages}, </li>`;
         });
         list += "</ul>";
   
