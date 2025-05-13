@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,7 +58,7 @@ body{
    <h1>DevConnect</h1>
    
    <h2>Create Account</h2><br>
-   <form action="createAccount" method="POST">
+   <form method="post">
 
     <strong>Full Name: </strong><input type="text" name="name" id="name" required placeholder="Full Name"><br><br>
    <strong>Email: </strong><input type="email" name="email" id="email" required placeholder="useremail@org.com"><br><br>
@@ -67,10 +68,7 @@ body{
 
 
   </div> <br>
-  <input type="button" value="Sign Up" id="button">
-  </form><br>
-  <a href="/">Already have an acccount? Log in</a>
+  <input type="submit" value="Sign Up" onsubmit = "newAccount()" id="button">
+  <a href="/">Alreadzy have an acccount? Log in</a>
 </body>
 </html>
-
-
