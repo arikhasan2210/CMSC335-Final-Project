@@ -13,7 +13,7 @@
     color:black;
     text-align: center;
     font-size: 4em;
-      font-family: "Share Tech", sans-serif;
+    font-family: "Share Tech", sans-serif;
 }
 h2{
     text-align: center;
@@ -23,12 +23,12 @@ body{
     text-align: center;
 }
 
-#emails{
+#email{
     width: 300px;
     height: 30px;
 }
 
-#passwords{
+#password{
     width: 280px;
     height: 30px;
    
@@ -56,13 +56,14 @@ body{
    <h1>DevConnect</h1>
    
    <h2>Developers Login Page </h2><br>
-   <form action="processAccount" method="POST">
+   <form method="post">
   
-   <strong>Email:</strong><input type="email" name="email" id="emails" required placeholder="useremail@org.com"><br><br>
-   <strong>Password: </strong><input type="text" name="passwords" id="passwords" required value><br><br>
-  </div> <br>
-  <input type="button" value="Login" id="button">
+   <strong>Email:</strong><input type="email" name="email" id="email" required placeholder="useremail@org.com"><br><br>
+   <strong>Password: </strong><input type="text" name="password" id="password" required value><br><br>
+   <br>
+  <input type="submit" value="Login" id="button">
   </form><br>
   <a href="/createAccount">Create account</a>
 </body>
 </html>
+
