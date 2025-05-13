@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevConnect</title>
+
+    <style>
+      h1{
+    color:black;
+    text-align: center;
+    font-size: 4em;
+}
+h2{
+    text-align: center;
+}
+body{
+    background-color: rgb(214, 122, 9);
+    text-align: center;
+}
+
+#emails{
+    width: 300px;
+    height: 30px;
+}
+
+#passwords{
+    width: 280px;
+    height: 30px;
+   
+}
+
+#button{
+    background-color: rgb(6, 114, 255);
+    width: 220px;
+    border-radius: 10px;
+    height: 46px;
+    color:white;
+    font-size: 25px;
+    text-align: center;
+
+}
+    </style>
+</head>
+<body>
+
+   <h1>DevConnect</h1>
+   
+   <h2>Developers Login Page </h2><br>
+   <form action="processAccount" method="POST">
+  
+   <strong>Email:</strong><input type="email" name="email" id="emails" required placeholder="useremail@org.com"><br><br>
+   <strong>Password: </strong><input type="text" name="passwords" id="passwords" required value><br><br>
+  </div> <br>
+  <input type="button" value="Login" onsubmit="return lookAccount();" id="button">
+  </form><br>
+  <a href="/create">Create account</a>
+</body>
+</html>
