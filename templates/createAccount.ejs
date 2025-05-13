@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevConnect</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+
+    <style>
+      h1{
+    color:black;
+    text-align: center;
+    font-size: 4em;
+    font-family: "Share Tech", sans-serif;
+}
+h2{
+    text-align: center;
+}
+body{
+    background-color: rgb(214, 122, 9);
+    text-align: center;
+}
+
+#emails{
+    width: 300px;
+    height: 30px;
+}
+
+#passwords{
+    width: 280px;
+    height: 30px;
+   
+}
+
+#button{
+    background-color: rgb(6, 114, 255);
+    width: 220px;
+    border-radius: 10px;
+    height: 46px;
+    color:white;
+    font-size: 25px;
+    text-align: center;
+
+}
+.share-tech-regular {
+  font-family: "Share Tech", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+    </style>
+    
+</head>
+<body>
+
+   <h1>DevConnect</h1>
+   
+   <h2>Create Account</h2><br>
+   <form action="createAccount" method="POST">
+
+    <strong>Full Name: </strong><input type="text" name="name" id="name" required placeholder="Full Name"><br><br>
+   <strong>Email: </strong><input type="email" name="email" id="email" required placeholder="useremail@org.com"><br><br>
+   <strong>Password: </strong><input type="text" name="password" id="password" required placeholder = "password"><br><br>
+    <strong>Github Username: </strong><input type="text" name="username" id="username" required placeholder = "Github username"><br><br>
+    <strong>Programming Languages: </strong><input type="text" name="languages" id="languages" required placeholder = "e.g. Node.js, React"><br><br>
+
+
+  </div> <br>
+  <input type="button" value="Sign Up" id="button">
+  </form><br>
+  <a href="/">Already have an acccount? Log in</a>
+</body>
+</html>
+
 
