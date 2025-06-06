@@ -1,4 +1,4 @@
-# CMSC335-Final-Project
+# DevConnect
 
 Submitted by: Arik Hasan (directory id: ahasan13)
 
